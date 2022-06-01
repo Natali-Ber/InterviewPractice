@@ -15,11 +15,13 @@ public class DuplicateCharacters {
                     count++;
                 }
             }
-            if (count == 2) {
+           if (count == 2) {
+             //  if (count == 1) {
                 result += ch;
             }
         }
         System.out.println(result);
       }
     }
+//RESULT :   AD
 //RESULT : BBCC

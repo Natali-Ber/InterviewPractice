@@ -1,11 +1,9 @@
 package Array;
 
-import java.lang.reflect.Array;
-
-public class UniqueNumber {
+public class UniqueNumbers {
     public static void main(String[] args) {
 
-        int[] num = {1, 4, 5, 5, 8, 6, 6};
+        int[] num = {1, 4, 5, 6, 8, 6, 6,5};
 
         for (int j = 0; j < num.length; j++) {
             int ch = num[j]; //'A'
@@ -16,8 +14,8 @@ public class UniqueNumber {
                     frequency++;
                 }
             }
-            if(frequency == 1){   // UNIQUE
-           // if(frequency == 2){ //DUPLICATES
+            //if(frequency == 1){   // UNIQUE
+           if(frequency == 2){ //DUPLICATES
                     System.out.println(ch);
             }
 

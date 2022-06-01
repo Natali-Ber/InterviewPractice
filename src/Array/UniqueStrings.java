@@ -1,6 +1,6 @@
 package Array;
 
-public class UniqueString {
+public class UniqueStrings {
     public static void main(String[] args) {
 
         String[] words = {"Layan", "Layan", "Oleksandr", "Olga"};

@@ -19,7 +19,7 @@ OR
                 max =number;
             }
         }
-        System.out.println(max);
+        System.out.println("MAX "+max);
 
     }
 }
