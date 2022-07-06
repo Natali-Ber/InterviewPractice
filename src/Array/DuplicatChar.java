@@ -14,8 +14,8 @@ public class DuplicatChar {
                     frequency++;
                 }
             }
-          //  if(frequency == 2){   // DUPLICATES
-          if(frequency == 1){  // UNIQUE
+           if(frequency == 2){   // DUPLICATES
+          //if(frequency == 1){  // UNIQUE
                     System.out.println(ch);
                 }
             }
