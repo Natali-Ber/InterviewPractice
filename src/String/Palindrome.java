@@ -25,7 +25,8 @@ public class Palindrome {
 
     }
 
-     */
+
+
    public static boolean solution(String inputString) {
 
 
@@ -43,4 +44,32 @@ public class Palindrome {
 
         System.out.println(solution("aabaa"));
     }
+
+
+     */
+
+
+    public static boolean isPalindrome(String s) {
+        String reverced = "";
+
+        String s1=s.replace(" ","") ;
+        String s2=s1.replace(",","") ;
+        String s3= s2.replace(":","");
+        System.out.println(s3);
+        for (int i= s3.length()-1; i>=0; i--){
+            reverced += s3.charAt(i);
+
+        }
+        System.out.println(reverced);
+        boolean isPalindrome = s3.equalsIgnoreCase(reverced);
+        return isPalindrome;
+    }
+
+    public static void main(String[]args){
+        System.out.println(isPalindrome("A man, a plan, a canal: Panama"));
+    }
+
+
+
+
 }

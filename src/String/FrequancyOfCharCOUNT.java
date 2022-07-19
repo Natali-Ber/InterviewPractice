@@ -7,7 +7,6 @@ public class FrequancyOfCharCOUNT {
         System.out.println(FrequencyOfChars("Aaabbbca"));
     }
 
-
     public static String FrequencyOfChars(String str) {
         String nonDup = "";
         for(int i=0; i < str.length(); i++) {

@@ -4,7 +4,9 @@ import java.util.Arrays;
 
 public class ReverceArray {
     public static void main(String[] args) {
-
+        char[] hello = {'H', 'e', 'l', 'l', 'o'};
+        reverseString(hello);
+        System.out.println("=============================================");
 //NUMBERS
         int[] numbers = {10, 20, 30, 40};
         //               0    1   2   3
@@ -27,10 +29,10 @@ public class ReverceArray {
             }
 
             System.out.println(reverse);
-        // RESULT :       //timilbA runimlE
-                         // ciliK ilA
-                         // ylloH nahtanoJ
-                         // terhoS nesluG
+            // RESULT :       //timilbA runimlE
+            // ciliK ilA
+            // ylloH nahtanoJ
+            // terhoS nesluG
         }
 
 //CHARS
@@ -39,23 +41,37 @@ public class ReverceArray {
             System.out.println(letters[i]);
         }
 // RESULT : //C
-            //B
-            //A
+        //B
+        //A
 
 
 //Sentence
 
-    String[] sentence = {"Today", "is", "a", "good", "day!" };
+        String[] sentence = {"Today", "is", "a", "good", "day!"};
 
 
-    String reverseSentence = ""; // !day good a is Today
+        String reverseSentence = ""; // !day good a is Today
 
-    for (int i = sentence.length - 1; i >= 0; i--) {
-        reverseSentence += sentence[i] + " ";
-    }
-    System.out.println(reverseSentence);
+        for (int i = sentence.length - 1; i >= 0; i--) {
+            reverseSentence += sentence[i] + " ";
+        }
+        System.out.println(reverseSentence);
 //RESULT: day! good a is Today
 
-}
+    }
+
+
+    public static void reverseString(char[] s) {
+
+        //for (int i = s.length - 1; i >= 0; i--) {
+                //    System.out.print(s[i]);
+        char[] reversed = new char[s.length];
+        for (int i = s.length - 1, j = 0; i >= 0; i--, j++) {
+            reversed[j] = s[i];
+        }
+        System.out.println(Arrays.toString(reversed));
+        }
+
+
 
 }
