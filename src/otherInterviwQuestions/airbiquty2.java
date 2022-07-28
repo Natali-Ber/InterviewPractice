@@ -16,7 +16,6 @@ public class airbiquty2 {
         }
 
     }
-
     public static String wordReverse(String str) {
 
         String []words = str.split(" ");
